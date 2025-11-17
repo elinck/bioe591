@@ -32,3 +32,5 @@ sbatch slurm_demo.sbatch
 ```
 
 Note the job ID. To check on the status of the job, type `sacct`. This script will complete almost instantaneously, but for longer operations, you may want to close the screen, log off, log back in, open the screen, and check its status. You should see that four `.txt` files have been created---take a look!
+
+To kill a screen session, either type `exit` within it, or `screen -S slurm_demo -X quit` (with `slurm_demo` as the screen name) from the outside. 

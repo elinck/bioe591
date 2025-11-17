@@ -19,6 +19,6 @@
 #SBATCH --mail-user=ethan.linck@montana.edu
 #SBATCH --mail-type=ALL
 
-source ~/.bashrc
+module load Mamba/23.11.0-0
 echo "Running on $SLURM_CPUS_PER_TASK CPUs"
 python hello.py
